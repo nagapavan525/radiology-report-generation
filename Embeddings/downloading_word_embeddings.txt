@@ -1,0 +1,2 @@
+biowordvec embeddings:- github.com/ncbi-nlp/BioSentVec
+word2vec on pubmed datasets:- https://github.com/RaRe-Technologies/gensim-data/issues/28
