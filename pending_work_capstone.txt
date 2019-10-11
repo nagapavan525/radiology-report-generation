@@ -1,0 +1,63 @@
+1) Kunal will add end-end flow of Bidirectional Sentence embeddings model diagram
+2) Kunal will add "NLP Embedding model to embed the word/sentence into numerical vectors" information in Report
+3) Ezhirko will add new approach of calculating BLEU score calculation for all models
+	a) Attention model with word embeddings
+	b) Bidirectional model with word embeddings
+	c) Bidirectional model with sentence embeddings
+
+3) Kunal will add Normal bleu score calculations for all models
+	a) Attention model with word embeddings
+	b) Bidirectional model with word embeddings
+	c) Bidirectional model with sentence embeddings
+	
+4) Kalyan will add
+	a) Implications
+	b) Limitations
+	c) Closing Reflections
+	d) outline
+	
+5) Pavan will enhance architecture info, formuals etc...
+
+
+Attention model with word embeddings - 50 epochs
+
+Bidirectional model with word embeddings - 50 epochs
+
+Bidirectional model with sentence embeddings - 30 epochs - run 20 more epochs
+
+
+--------------------------------
+
+For single model - 5 instances
+
+model1 b1, b2, b3, b4
+model2
+model3
+model4
+model5
+
+-------------------------
+
+For single model - 5 instances
+
+model1 b1, b2, b3, b4
+model2
+model3
+model4
+model5
+
+----------------------------
+
+For single model - 5 instances
+
+model1 b1, b2, b3, b4
+model2
+model3
+model4
+model5
+
+--------------------------
+
+
+
+
