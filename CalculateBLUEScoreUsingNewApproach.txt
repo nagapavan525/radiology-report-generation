@@ -1,0 +1,52 @@
+import warnings
+warnings.filterwarnings("ignore")
+
+***************************Seperate Cell********************************
+
+def CalculateBLUEScore(predicted, Reference):
+  pred_sents = predicted.split('.')
+  actual_sents = Reference.split('.')
+  pred_final = []
+  actual_final = []
+  pred_scores = []
+
+  for sent in pred_sents:
+    cur_list = sent.split(' ')
+    cur_list = [word for word in cur_list if word]
+    pred_final.append(cur_list)
+    pred_final = [item for item in pred_final if item]
+  
+  for sent in actual_sents:
+    cur_list = sent.split(' ')
+    cur_list = [word for word in cur_list if word]
+    actual_final.append(cur_list)
+    actual_final = [item for item in actual_final if item]
+
+  for pred_sent in pred_final:
+    pred_scores.append(sentence_bleu(actual_final, pred_sent,  weights=(1,0,0,0)))
+  avgScore = sum(pred_scores)/len(pred_scores)
+  return avgScore
+
+***************************Seperate Cell********************************
+Predictions = dict()
+GroundTruths = dict()
+test_scores = []
+n = len(encoding_test)
+start = time()
+for z in range(n):
+  pic = list(encoding_test.keys())[z]
+  image = encoding_test[pic].reshape((1,1024))
+  imgName = pic.split('.')[0]
+  if imgName in indication_sent:
+    ind = indication_sent[imgName]
+    if imgName in first_sent:
+      references = first_sent[pic.split('.')[0]]
+      predicted = greedySearch(image,ind)
+      references = references[0].replace('startseq ',"")
+      references = references.replace('endseq',"")
+      score = CalculateBLUEScore(predicted,references)
+      test_scores.append(score)
+overAllScore = sum(test_scores)/len(test_scores)
+print(overAllScore)
+print("No Of Images = ", len(test_scores))
+print("Time taken in seconds =", time()-start)
