@@ -1,7 +1,8 @@
 Radiology report generation final ipynb files 
 
 1. Pre-processing
-2. Main files
+2. Pickle files
+3. Main files
   Three main model files
     a) LSTM with attention architecture using word embeddings
     b) Bidirectional LSTM architecture using word embeddings
