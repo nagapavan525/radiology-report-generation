@@ -7,3 +7,6 @@ Radiology report generation final ipynb files
     a) LSTM with attention architecture using word embeddings
     b) Bidirectional LSTM architecture using word embeddings
     c) Bidirectional LSTM architecture using sentence embeddings
+
+The model which gave best results among models above which outperformed state-of-art results is 
+        -> Bidirectional LSTM architecture using word embeddings 
