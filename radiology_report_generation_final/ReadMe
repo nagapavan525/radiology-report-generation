@@ -11,3 +11,4 @@ Radiology report generation final files
 The model which gave best results among models above which outperformed state-of-art results is 
         -> Bidirectional LSTM architecture using word embeddings 
           - Automated Radiology Report Generation of Medical Images using BiDirectional LSTM.ipynb
+        -> Model weights - Pickle/BestPerformingBiDirectionalModel.h5
