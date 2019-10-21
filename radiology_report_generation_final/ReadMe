@@ -9,4 +9,5 @@ Radiology report generation final files
     c) Bidirectional LSTM architecture using sentence embeddings
 
 The model which gave best results among models above which outperformed state-of-art results is 
-        -> Bidirectional LSTM architecture using word embeddings - Automated Radiology Report Generation of Medical Images using BiDirectional LSTM.ipynb
+        -> Bidirectional LSTM architecture using word embeddings 
+          - Automated Radiology Report Generation of Medical Images using BiDirectional LSTM.ipynb
